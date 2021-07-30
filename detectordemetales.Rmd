@@ -77,5 +77,14 @@ mapa_final <- mapa_base  %>%
 
 
 mapa_final
+
 ```
 
+```{r index.html}
+
+file.copy("detectordemetales.html", to="docs/")
+file.rename("docs/detectordemetales.html", to="docs/index.html")
+file.remove("docs/detectordemetales.html")
+file.remove("detectordemetales.html")
+
+```
