@@ -1,1 +1,2 @@
-# detectordemetales
+# Detector de metales
+Cuento digital
