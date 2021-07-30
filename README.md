@@ -3,7 +3,7 @@
 
 Repositorio del cuento digital **Detector de metales**.
 
-+ [Script de RMarkdown para generar el cuento](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.Rmd)
++ [Script de RMarkdown](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.Rmd)
 
 + [Leer el cuento](https://nmorandeira.github.io/detectordemetales/)
 
