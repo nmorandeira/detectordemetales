@@ -65,13 +65,13 @@ icons <- awesomeIcons(
   markerColor = c("tomato", "cadetblue", "blue", "green", "purple")
 )
 
-popup <- popupOptions(
-  autoPan=FALSE,
-  closeButton = TRUE)
+etiqueta <- popupOptions(
+  maxWidth=500)
 
 mapa_final <- mapa_base  %>%
   addAwesomeMarkers(data=detectormetales,
-              popup=~htmlEscape(detectormetales$V1),
+              popup=~detectormetales$V1,
+              popupOptions=etiqueta,
               icon=icons) %>% 
   addLayersControl(baseGroups = c("Acuarela", "Satelital", "Mapa")) 
 
