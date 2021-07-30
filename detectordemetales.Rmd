@@ -1,0 +1,81 @@
+---
+title: "Detector de metales"
+author: "Silvia 79"
+date: "7/30/2021"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    lib_dir: libs
+    seal: false
+    #nature:
+      #ratio: '16:9'
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval=T, message=FALSE, warning=FALSE)
+```
+
+background-color: black
+
+
+<span style="color: white; font-size: 30px">**Detector de metales**</span>
+
+<span style="color: white;">_Seudónimo:_  Silvia 79</span>
+
+
+```{r lectura_datos_espaciales}
+#Primero se leo los datos espaciales: un vectorial de puntos con dos campos, ID (un posible orden de la lectura) y lugar (el nombre de la ciudad o sitio). El relato asociado a cada punto tiene más de 254 caracteres, por lo que no puede guardarse en un campo del archivo vectorial.
+library(sf)
+library(dplyr)
+detectormetales <- st_read("data/DetectorMetales.shp", quiet=TRUE) %>%
+  arrange(id)
+```
+
+```{r lectura_relato}
+#Ahora leo el relato (una lista con un ítem ordenada según el ID) y lo asigno a cada punto georreferenciado.
+relato <- read.csv("data/relato.txt", header=FALSE)
+relato$V2 <- NULL
+relato$id <- c(1,2,3,4,5)
+detectormetales<-left_join(detectormetales, relato)
+```
+
+```{r librerias_leaflet}
+library(leaflet)
+library(htmltools)
+```
+
+```{r mapabase_OSM}
+#Por último genero el mapa, con sintaxis de Leaflet y un proveedor de mapa base de OpenStreetMap que simula una acuarela.
+mapa_base <-leaflet(width="100%") %>% 
+  addProviderTiles("Stamen.Watercolor", group="Acuarela")  %>%
+  addProviderTiles("OpenStreetMap.Mapnik", group = "Mapa") %>%
+  addProviderTiles("Esri.WorldImagery", group = "Satelital") %>%
+  setView(-60,-33, zoom = 5) 
+#mapa_base
+```
+
+```{r mapafinal}
+#Cada punto corresponde a un marcador con una etiqueta con el relato. 
+
+icons <- awesomeIcons(
+  icon = 'ios-keypad',
+  iconColor = 'white',
+  library = 'ion',
+  markerColor = c("tomato", "cadetblue", "blue", "green", "purple")
+)
+
+popup <- popupOptions(
+  autoPan=FALSE,
+  closeButton = TRUE)
+
+mapa_final <- mapa_base  %>%
+  addAwesomeMarkers(data=detectormetales,
+              popup=~htmlEscape(detectormetales$V1),
+              icon=icons) %>% 
+  addLayersControl(baseGroups = c("Acuarela", "Satelital", "Mapa")) 
+
+
+mapa_final
+```
+
