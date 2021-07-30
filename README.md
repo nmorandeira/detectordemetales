@@ -1,2 +1,2 @@
 # Detector de metales
-Cuento digital
+Repositorio del cuento digital
