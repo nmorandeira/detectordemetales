@@ -13,7 +13,7 @@ Links a los cinco párrafos de norte a sur (recordá que podés recorderlos en e
 + [Puente sobre arroyo Saladillo Dulce, provincia de Santa Fe](#arroyo-saladillo). Latitud sur 30.731° Longitud oeste 60.241°
 + [Laguna Setúbal (orilla), ciudad de Santa Fe, provincia de Santa Fe](#laguna-setúbal). Latitud sur 31.639° Longitud oeste 60.678°
 + [Parque Rivadavia en la Ciudad Autónoma de Buenos Aires](#parque-rivadavia). Latitud sur 34.619° Longitud oeste 58.435°
-+ [Ciudad de Viedma, provincia de Río Negro](#viedma). Latitud sur 40.812° Longitud oeste -62.988°
++ [Ciudad de Viedma, provincia de Río Negro](#viedma). Latitud sur 40.812° Longitud oeste 62.988°
 
 -----------------
   
