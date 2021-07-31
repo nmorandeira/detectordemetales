@@ -47,7 +47,7 @@ library(htmltools)
 
 ```{r mapabase_OSM}
 #Por último genero el mapa, con sintaxis de Leaflet y un proveedor de mapa base de OpenStreetMap que simula una acuarela.
-mapa_base <-leaflet(width="100%") %>% 
+mapa_base <-leaflet(width="100%", height = "75%") %>% 
   addProviderTiles("Stamen.Watercolor", group="Acuarela")  %>%
   addProviderTiles("OpenStreetMap.Mapnik", group = "Mapa") %>%
   addProviderTiles("Esri.WorldImagery", group = "Satelital") %>%
@@ -79,6 +79,11 @@ mapa_final <- mapa_base  %>%
 mapa_final
 
 ```
+
+<span style="color: white; font-size: 11px; float: right">
+[Versión accesible](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.md) para personas ciegas, con visión limitada u otras dificultades para interactuar con el mapa.
+</span>
+
 
 ```{r index.html}
 
