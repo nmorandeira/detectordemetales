@@ -20,6 +20,10 @@ Aquí dejo los links a los cinco párrafos de norte a sur (recordá que podés r
 ##### Laguna Setúbal
 No lo hacía por dinero. Vivía de la herencia de su familia, aunque no fuera fácil de intuir porque llevaba una vida austera. Cuando la laguna estaba baja, o siempre que tenía un rato libre, se acercaba a la orilla con el detector de metales. Borcegos para no empantanarse y una mochila roja en la que juntaba sus hallazgos. Si sonaba el pitido del detector, hacía un pozo con una pala, apartaba el objeto de metal, lo guardaba y seguía buscando. De sur a norte, su recorrido. Mientras estaba en la laguna no se preocupaba por el tipo de metal. Las horas de luz eran el bien preciado. Al llegar a su casa hacía reaccionar a los metales con ácido y los clasificaba. Me regaló un anillo de oro grabado con las iniciales CJ y el año 1946. Lo uso en el pulgar derecho.
 
+[Volver a links](#párrafos) o [ir al párrafo siguiente](#corrientes)
+
+-----------------
+
 ##### Corrientes
 Se acordaba de lo que había hecho su familia cuando se mudaron al sur. No hablaba de política, decía. Me contaba detalles cotidianos de quienes compartían las tardes con ellos y me decía que tenía que ver las fotos para entenderlo cabalmente, que cuando llegáramos a un lugar tranquilo me las iba a mostrar. Su abuelo había sido interventor de una gobernación y su padre estaba en la Secretaría de Turismo, así que recorrían los miradores de las postales típicas. Se acordaba de la ropa que usaba cada amigo de la familia, cada prenda y color, y de sus apodos. Pero en ese bar lo vi moler pimienta sobre en el café con leche y de un momento a otro me miró como a una desconocida. Hacía una semana había abandonado el álbum de fotos familiar en la plaza del pueblo, al lado de una pareja que hacía retratos. En ese momento yo aún no sabía que podría arrepentirse, que quizás esa decisión no se sostendría unas horas más tarde.
 
@@ -31,13 +35,4 @@ Compré un lote de fotos antiguas, sólo porque estaba publicado con el apellido
 
 ##### Viedma
 Su hermana consiguió mi teléfono y me mandó un mensaje: que lo vaya a ver, que él me nombraba. Giré la alianza en mi pulgar. Como si me diera cuerda para envalentonarme, pero en falso, la giré varias veces antes de responder. Disculpame, le dije, vivo muy lejos.
-
-```diff
-+ C +
-- O -
-! L !
-@@ O @@
-# R #
-S
-```
 
