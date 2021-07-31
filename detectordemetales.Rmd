@@ -80,7 +80,7 @@ mapa_final
 
 ```
 
-<span style="color: white; font-size: 11px; float: right">
+<span style="color: white; font-size: 12px; float: right">
 [Versión accesible](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.md) para personas ciegas, con visión limitada u otras dificultades para interactuar con el mapa.
 </span>
 
