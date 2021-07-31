@@ -16,7 +16,7 @@ Aquí dejo los links a los cinco párrafos de norte a sur (recordá que podés r
 + [Ciudad de Viedma, provincia de Río Negro](link). Latitud sur 40.812° Longitud oeste -62.988°
 
 -----------------
-
+  
 ##### Laguna Setúbal
 No lo hacía por dinero. Vivía de la herencia de su familia, aunque no fuera fácil de intuir porque llevaba una vida austera. Cuando la laguna estaba baja, o siempre que tenía un rato libre, se acercaba a la orilla con el detector de metales. Borcegos para no empantanarse y una mochila roja en la que juntaba sus hallazgos. Si sonaba el pitido del detector, hacía un pozo con una pala, apartaba el objeto de metal, lo guardaba y seguía buscando. De sur a norte, su recorrido. Mientras estaba en la laguna no se preocupaba por el tipo de metal. Las horas de luz eran el bien preciado. Al llegar a su casa hacía reaccionar a los metales con ácido y los clasificaba. Me regaló un anillo de oro grabado con las iniciales CJ y el año 1946. Lo uso en el pulgar derecho.
 
@@ -31,3 +31,13 @@ Compré un lote de fotos antiguas, sólo porque estaba publicado con el apellido
 
 ##### Viedma
 Su hermana consiguió mi teléfono y me mandó un mensaje: que lo vaya a ver, que él me nombraba. Giré la alianza en mi pulgar. Como si me diera cuerda para envalentonarme, pero en falso, la giré varias veces antes de responder. Disculpame, le dije, vivo muy lejos.
+
+```diff
++ C +
+- O -
+! L !
+@@ O @@
+# R #
+S
+```
+
