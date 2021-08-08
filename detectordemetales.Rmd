@@ -79,12 +79,12 @@ mapa_final
 
 ```
 
-<span style="color: white; font-size: 12px; float: right">
-[Versión accesible](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.md) para personas ciegas, con visión limitada u otras dificultades para interactuar con el mapa.
+<span style="color: white; font-size: 11px; float: right">
+[Versión accesible](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.md) para lectores de pantalla (para personas ciegas, con visión limitada u otras dificultades para interactuar con el mapa).
 </span>
 
 
-```{r index.html}
+```{r index.html, eval=F}
 
 file.copy("detectordemetales.html", to="docs/")
 file.rename("docs/detectordemetales.html", to="docs/index.html")
