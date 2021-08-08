@@ -48,9 +48,9 @@ library(htmltools)
 ```{r mapabase_OSM}
 #Por último genero el mapa, con sintaxis de Leaflet y un proveedor de mapa base de OpenStreetMap que simula una acuarela.
 mapa_base <-leaflet(width="100%", height = "75%") %>% 
-  addProviderTiles("Stamen.Watercolor", group="Acuarela")  %>%
-  addProviderTiles("OpenStreetMap.Mapnik", group = "Mapa") %>%
-  addProviderTiles("Esri.WorldImagery", group = "Satelital") %>%
+  addProviderTiles("Stamen.Watercolor", group="Acuarela", options = providerTileOptions(attribution = "Acuarela de fondo: Stamen Design Watercolor, licencia CC BY 3.0. Datos OpenStreetMap, licencia CC BY SA 2.0" )) %>%
+  addProviderTiles("OpenStreetMap.Mapnik", group = "Mapa", options = providerTileOptions(attribution = "Mapa de fondo: © OpenStreetMap contributors, licencia CC BY-SA 2.0" )) %>%
+  addProviderTiles("Esri.WorldImagery", group = "Satelital", options = providerTileOptions(attribution = "Imágenes de fondo: © Esri; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, y GIS User Community" )) %>%
   setView(-60,-33, zoom = 5) 
 #mapa_base
 ```
