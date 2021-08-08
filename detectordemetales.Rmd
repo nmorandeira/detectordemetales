@@ -23,7 +23,6 @@ background-color: black
 
 <span style="color: white;">_Seudónimo:_  Silvia 79</span>
 
-
 ```{r lectura_datos_espaciales}
 #Primero se leo los datos espaciales: un vectorial de puntos con dos campos, ID (un posible orden de la lectura) y lugar (el nombre de la ciudad o sitio). El relato asociado a cada punto tiene más de 254 caracteres, por lo que no puede guardarse en un campo del archivo vectorial.
 library(sf)
@@ -48,10 +47,10 @@ library(htmltools)
 ```{r mapabase_OSM}
 #Por último genero el mapa, con sintaxis de Leaflet y un proveedor de mapa base de OpenStreetMap que simula una acuarela.
 mapa_base <-leaflet(width="100%", height = "75%") %>% 
-  addProviderTiles("Stamen.Watercolor", group="Acuarela", options = providerTileOptions(attribution = "Acuarela de fondo: Stamen Design Watercolor, licencia CC BY 3.0. Datos OpenStreetMap, licencia CC BY SA 2.0" )) %>%
-  addProviderTiles("OpenStreetMap.Mapnik", group = "Mapa", options = providerTileOptions(attribution = "Mapa de fondo: © OpenStreetMap contributors, licencia CC BY-SA 2.0" )) %>%
+  addProviderTiles("Stamen.Watercolor", group="Acuarela", options = providerTileOptions(attribution = "Acuarela de fondo: Stamen Design Watercolor, CC BY 3.0. Datos OpenStreetMap, CC BY SA 2.0" )) %>%
+  addProviderTiles("OpenStreetMap.Mapnik", group = "Mapa", options = providerTileOptions(attribution = "Mapa de fondo: © OpenStreetMap contributors, CC BY-SA 2.0" )) %>%
   addProviderTiles("Esri.WorldImagery", group = "Satelital", options = providerTileOptions(attribution = "Imágenes de fondo: © Esri; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, y GIS User Community" )) %>%
-  setView(-60,-33, zoom = 5) 
+  setView(-60,-34, zoom = 5) 
 #mapa_base
 ```
 
