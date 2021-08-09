@@ -88,7 +88,6 @@ mapa_final
 
 file.copy("detectordemetales.html", to="docs/")
 file.rename("docs/detectordemetales.html", to="docs/index.html")
-file.remove("docs/detectordemetales.html")
 file.remove("detectordemetales.html")
 
 ```
