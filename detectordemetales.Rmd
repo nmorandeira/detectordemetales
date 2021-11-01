@@ -20,7 +20,10 @@ background-color: black
 
 <span style="color: white; font-size: 30px">**Detector de metales**</span>
 
-<span style="color: white;">_Seudónimo:_  Silvia 79</span>
+<span style="color: white;">Natalia Morandeira</span>
+
+<span style="color: white; font-size: 15px">_Podés explorar el territorio y leer el cuento en el orden que elijas. Si preferís leer en orden cronológico, hacé click aquí</span>
+
 
 ```{r lectura_datos_espaciales}
 #Primero se leo los datos espaciales: un vectorial de puntos con dos campos, ID (un posible orden de la lectura) y lugar (el nombre de la ciudad o sitio). El relato asociado a cada punto tiene más de 254 caracteres, por lo que no puede guardarse en un campo del archivo vectorial.
@@ -81,6 +84,51 @@ mapa_final
 <span style="color: white; font-size: 11px; float: right">
 [Versión accesible](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.md) con lectores de pantalla (para personas ciegas, con visión limitada u otras dificultades para interactuar con el mapa).
 </span>
+
+---
+
+background-color: black
+
+
+<span style="color: white; font-size: 30px">**Detector de metales**</span>
+
+<span style="color: white;">Natalia Morandeira</span>
+
+<span style="color: white; font-size: 15px">_En esta versión, cada punto tiene un número que indica el orden cronológico. Si preferís volver a la versión sin números, hacé click aquí</span>
+
+```{r mapafinal_num}
+#Cada punto corresponde a un marcador con una etiqueta con el relato. 
+
+
+icons_num <- c("circle-1", "circle-1", "circle-3", "circle-4", "circle-5")
+icons <- awesomeIcons(
+  icon = icons_num,
+  library = fa,
+  iconColor = 'white',
+  markerColor = c("tomato", "cadetblue", "blue", "green", "purple")
+)
+
+
+etiqueta <- popupOptions(
+  maxWidth=500)
+
+mapa_final <- mapa_base  %>%
+  addAwesomeMarkers(data=detectormetales,
+              popup=~detectormetales$V1,
+              popupOptions=etiqueta,
+              icon=icons) %>% 
+  addLayersControl(baseGroups = c("Acuarela", "Satelital", "Mapa")) 
+
+
+mapa_final
+
+```
+
+<span style="color: white; font-size: 11px; float: right">
+[Versión accesible](https://github.com/nmorandeira/detectordemetales/blob/main/detectordemetales.md) con lectores de pantalla (para personas ciegas, con visión limitada u otras dificultades para interactuar con el mapa).
+</span>
+
+---
 
 
 ```{r index.html, eval=F}
